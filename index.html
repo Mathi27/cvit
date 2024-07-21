@@ -1,96 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <link rel="icon" type="image/x-icon" href="">
-
-    <style>
-        body { margin: 0; padding: 0; }
-        html { height: 100%; cursor: default; }
-        body {
-            font-family: "Roboto", sans-serif; /* Default font */
-            width: 100%; height: 100%;
-            text-align: center;
-            display: table;
-            opacity: 1;
-            animation: fadein 3s forwards;
-        }
-        h2 {
-            font-weight: 300;
-            margin-bottom: 25px;
-        }
-        img {
- 
-            border: 0; /* For IE */
-            /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
-            /* When changing logo, change this also */
-            aspect-ratio: 125 / 50;
-        }
-        #main {
-            vertical-align: middle;
-            display: table-cell;
-        }
-        /* Progress bar */
-        #progress {
-            width: 45%; /* Bar width */
-            margin: 0 auto;
-            border-radius: 10px; /* Roundness */
-            background-color: #a8a8a8; /* Background colour */
-            padding: 7px 5px;
-            /* border: 5px solid #a8a8a8; Border */
-        }
-        #fill {
-            padding: 2px 0;
-            background-color: #00b98b; /* Fill colour */
-            width: 35%; /* Bar percentage, change text below also */
-            border-radius: 25px; /* Roundness */
-            animation: proanimate 2s;
-        }
-        #barpercent h3 {
-            color: white; /* Bar percentage text colour */
-            margin: 0; padding: 0;
-            opacity: 1;
-            animation: fadein 3s forwards;
-        }
-
-        /* Fades in animation */
-        @keyframes fadein  {
-            from { opacity: 0; }
-        }
-        /* Animates bar on page load */
-        @keyframes proanimate {
-            from { width: 0%; }
-        }
-
-        @media screen and (max-width:600px) {
-            img {
-                width: 180px;
-                height: 180px;
-                
-            }
-            h1 {
-                font-size: 1.3em;
-            }
-            h2 {
-                margin: 1.1em;
-                font-size: 1.1em;
-            }
-            #progress {
-                width: 80%; /* Bar width */
-            }
-        }
-    </style>
-    <title>Indus valley Children</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Children of Indus valley</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="main">
-        <img src="cvit.jpg" alt="Indus Valley children logo">
-        <h1>The Children of Indus Valley</h1>
-        <h2>Our website is currently under construction. </h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
+    <nav>
+        <div class="logo-container">
+            <img src="./photos/cvit.jpg" alt="Trust Logo" class="logo">
+            <span class="trust-name">THE CHILDREN OF INDUS VALLEY (TRUST)</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Species Eradication Alert!</h1>
+        <p class="highlight">Last fifty Kanchi Bulls alone left in our Planet.</p>
+        <div class="image-container">
+            <img src="./photos/kanchi-kuttai.png" alt="Kanchi Bull Image">
+        </div>
+        <p>India has over 175 Varieties of Cows. Tamil Nadu alone has over 45 varieties.</p>
+        <p>Kanchi Bull and Cow is one among them.</p>
+        <p>If a cow sees a bull from another breed come behind it, the cow will immediately sit down. Why? Else if mating happens, the cow will die in delivering the mixed breed calf (head shape, leg shape, etc). Cows are sensitive to breeds, therefore transporting breeds and caging them in restricted spaces is extremely wrong.</p>
+        <p>Jerseys are brought into this country to serve the famines. Milk + Coffee. They are not Indian Breed Cows (Not Gaumatha). Our Bulls and Cows have been stolen to America - called American Brahman <a href="https://brahman.org/" target="_blank">https://brahman.org/</a></p>
+        <p>We have seen - At just 150 Rs/KG, our Kanchi Bulls have been wiped away this whole year. Only 50 Kanchi Bulls are left now.</p>
+        <p>This is a very serious species alert.</p>
+        <p>Artificial Insemination and Semen extraction is not the way to protect and extend the life of any species on this planet. Definitely not our Gaumatha.</p>
+        <p>We have found a solution. 1 Kanchi Bull + 10 Kanchi Cows in 1 acre of land can begin their self-sustained life. (13 Countries are importing natural Cow dung from our Indian Breed Cows)</p>
+        <p>Fodder + Natural Vegetables + Farming + Cow Products + Care taking family. The entire family will save this Go-tram at 50,000/- per bull + herd. And another 50,000 to set up the care taking, until self-sustenance comes about.</p>
+        <p>Please contribute to our The Children of Indus Valley Trust. We will arrange for the Bulls to be transported with cows, Gaupooja would be done across all Gaushalas where we save this Go-tram, and daily updates shared with you by WhatsApp.</p>
+        <div class="video-container">
+            <iframe   width="800" height="400" src="https://www.youtube.com/embed/Cji4peW8DhI?si=l8aK4rPjBiKLsDBX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
     </div>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <footer>
+        <h2>Donate Now</h2>
+        <button class="donate-button" id="donateUPI">Donate Via UPI</button>
+        <button class="donate-button" id="donateLink">Donate via Website</button>
+        <p>Connect with <b>Arun Janarthanan, PhD</b></p>
+        <div class="button-container">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="linkedin-button">Connect on LinkedIn</a>
+        </div>
+    </footer>
+  
+
+    <div id="upiModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="./photos/cvit-upi.jpeg" alt="UPI Code" class="upi-image">
+        </div>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
